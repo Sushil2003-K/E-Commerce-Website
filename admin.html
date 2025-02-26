@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Admin Dashboard - Manage Bookings</h1>
+
+    <table id="booking-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Service</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="booking-list">
+            <!-- Bookings will be added here dynamically -->
+        </tbody>
+    </table>
+
+    // Check if Admin is Logged In
+    if (localStorage.getItem("adminLoggedIn") !== "true") {
+        alert("Access Denied! Please login first.");
+        window.location.href = "admin-login.html"; // Redirect to Login Page
+    }
+    
+    <button onclick="logoutAdmin()">Logout</button>
+    <script src="admin.js"></script>
+</body>
+</html>
