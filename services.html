@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="service-style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Our Services</h1>
+    </header>
+
+    <section class="services">
+        <div class="service-box">
+            <img src="cctv.jpg" alt="CCTV Installation">
+            <h3>CCTV Installation</h3>
+            <p>We provide professional CCTV installation services for homes and businesses.</p>
+            <button class="book-btn"data-service="CCTV Installation">Book Now</button>
+        </div>
+
+        <div class="service-box">
+            <img src="repair.jpg" alt="CCTV Repair">
+            <h3>CCTV Repair</h3>
+            <p>Our experts repair and maintain all types of CCTV cameras.</p>
+            <button class="book-btn" data-service="CCTV Repair">Book Now</button>
+        </div>
+
+        <div class="service-box">
+            <img src="computer.jpg" alt="Security Systems">
+            <h3>Security Systems</h3>
+            <p>We offer the best security solutions for your home and office.</p>
+            <button class="book-btn" data-service="security-system">Book Now</button>
+        </div>
+    </section>
+
+ <!-- Service Booking Section -->
+<section id="booking">
+    <h2>Book a Service</h2>
+    <form id="booking-form">
+        <label for="name"></label>
+        <input type="text" id="name" placeholder="Enter your full name" required>
+
+        <label for="email"></label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="phone"></label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+        <label for="service"></label>
+        <select id="service">
+            <option value="CCTV Installation">CCTV Installation</option>
+            <option value="Repair Service">Repair Service</option>
+            <option value="Maintenance">Maintenance</option>
+        </select>
+
+        <label for="date"></label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Book Now</button>
+    </form>
+
+    <p id="booking-message" style="display: none; color: green;">Your booking has been confirmed!</p>
+</section>
+
+    <script src="service.js"></script>
+</body>
+</html>
