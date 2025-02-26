@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Auth Container */
+.auth-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+/* Heading */
+.auth-container h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Input Fields */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #4ca1af;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2c3e50;
+}
+
+/* Toggle Login/Signup */
+#toggle-form {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#toggle-form span {
+    color: blue;
+    text-decoration: underline;
+}
