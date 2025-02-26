@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="auth-style.css">
+    <script type="module" src="auth.js"></script>
+</head>
+<body>
+    <div class="auth-container">
+        <h2 id="form-title">Login</h2>
+        
+        <form id="auth-form">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <select id="user-role">
+                <option value="user">Regular User</option>
+                <option value="admin">Admin</option>
+            </select>
+            <button type="submit" id="auth-btn">Login</button>
+            <p id="error-message"></p>
+        </form>
+
+        <p id="toggle-form">New here? <span>Sign Up</span></p>
+    </div>
+</body>
+</html>
